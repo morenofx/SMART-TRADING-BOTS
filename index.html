@@ -31,7 +31,6 @@
       overflow-x: hidden;
     }
 
-    /* Matrix rain effect */
     .matrix-bg {
       position: fixed;
       top: 0; left: 0; right: 0; bottom: 0;
@@ -42,7 +41,6 @@
       z-index: -1;
     }
 
-    /* Scanlines */
     body::after {
       content: '';
       position: fixed;
@@ -61,7 +59,6 @@
 
     code, .mono { font-family: 'JetBrains Mono', monospace; }
 
-    /* Navigation */
     nav {
       position: fixed;
       top: 0; left: 0; right: 0;
@@ -111,7 +108,6 @@
 
     .nav-links a:hover { color: var(--neon-green); }
 
-    /* Hero */
     .hero {
       min-height: 100vh;
       display: flex;
@@ -219,7 +215,6 @@
       background: rgba(0, 255, 65, 0.1);
     }
 
-    /* Products */
     .products {
       padding: 6rem 5%;
       background: linear-gradient(180deg, var(--bg-dark) 0%, var(--bg-card) 100%);
@@ -248,7 +243,7 @@
 
     .products-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
       gap: 2rem;
       max-width: 1200px;
       margin: 0 auto;
@@ -268,7 +263,6 @@
       position: absolute;
       top: 0; left: 0; right: 0;
       height: 3px;
-      background: linear-gradient(90deg, transparent, var(--gold), transparent);
       opacity: 0;
       transition: opacity 0.3s;
     }
@@ -406,7 +400,6 @@
       color: var(--neon-green);
     }
 
-    /* Features */
     .features {
       padding: 6rem 5%;
       background: var(--bg-dark);
@@ -450,7 +443,6 @@
       color: var(--text-muted);
     }
 
-    /* Chatbot */
     .support {
       padding: 6rem 5%;
       background: linear-gradient(180deg, var(--bg-dark) 0%, var(--bg-card) 100%);
@@ -639,7 +631,6 @@
       40% { transform: scale(1.2); opacity: 1; }
     }
 
-    /* Footer */
     footer {
       padding: 3rem 5%;
       text-align: center;
@@ -660,12 +651,10 @@
 
     .footer-content a:hover { text-decoration: underline; }
 
-    /* Scrollbar */
     ::-webkit-scrollbar { width: 8px; }
     ::-webkit-scrollbar-track { background: var(--bg-dark); }
     ::-webkit-scrollbar-thumb { background: var(--neon-green); border-radius: 4px; }
 
-    /* Mobile */
     @media (max-width: 768px) {
       .nav-links { display: none; }
       .products-grid { grid-template-columns: 1fr; }
@@ -729,7 +718,6 @@
     </div>
 
     <div class="products-grid">
-      <!-- XAU AutoTrader -->
       <div class="product-card gold">
         <img src="images/XAU_AUTOTRADER.png" alt="XAU AutoTrader" class="product-image">
         <div class="product-body">
@@ -773,7 +761,6 @@
         </div>
       </div>
 
-      <!-- BTC AutoTrader -->
       <div class="product-card btc">
         <img src="images/BTC-COIN.png" alt="BTC AutoTrader" class="product-image">
         <div class="product-body">
@@ -807,7 +794,6 @@
             <li>H1 Timeframe Strategy</li>
             <li>Auto Lot Sizing by Risk %</li>
             <li>Real-time News Countdown</li>
-            <li>High SpreadLimit for BTC Markets</li>
             <li>Live Dashboard with P/L Tracking</li>
           </ul>
 

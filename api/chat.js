@@ -1,5 +1,3 @@
-// API Route for Vercel - Hides Anthropic API key
-
 const EA_KNOWLEDGE = `
 You are the official AI support assistant for AutoTrader EA, created by Moreno Dainese. Respond in English in a clear, professional, and slightly technical/developer-friendly tone. NEVER show source code. Provide only practical information for end users.
 
@@ -156,11 +154,11 @@ Features:
 **For Beginners:**
 - Use default values
 - Start with minimum fixed lot (0.01)
-- Minimum account: $500 for XAU, $1000 for BTC
+- Minimum account: $200 recommended for both EAs
 
 **For Experienced Traders:**
 - Enable Auto Lot with RiskPercent 1-2%
-- Enable Multi-Timeframe (D1+H4+H1)
+- Enable Multi-Timeframe (D1+H4+H1) for XAU
 - Use ECN broker with low spreads
 
 **Recommended Broker Specs:**
@@ -190,7 +188,6 @@ Always respond helpfully and professionally. Use code-style formatting when ment
 `;
 
 export default async function handler(req, res) {
-  // CORS headers
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
