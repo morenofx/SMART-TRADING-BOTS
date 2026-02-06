@@ -1,12 +1,3 @@
 {
   "type": "module"
 }
-```
-
-5. Clicca **"Commit changes"**
-
----
-
-Vercel farà automaticamente un nuovo deploy. Aspetta 1 minuto e riprova:
-```
-https://smart-trading-bots.vercel.app/api/chat
