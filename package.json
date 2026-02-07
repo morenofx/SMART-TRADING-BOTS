@@ -1,3 +1,9 @@
 {
-  "type": "module"
+  "name": "smart-trading-bots",
+  "version": "3.0.0",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=18"
+  }
 }
